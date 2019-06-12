@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a -p --indicator-style=/boot -la
+ls -la -p /boot
