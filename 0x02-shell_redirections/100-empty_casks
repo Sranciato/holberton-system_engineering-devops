@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1 | find . -name "*" -empty 
+ls -1a | find . -name "*" -empty
