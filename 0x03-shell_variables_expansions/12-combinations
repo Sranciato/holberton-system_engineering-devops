@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -en "\b"{a..z}{a..z}"\n" | grep -v "oo"
+echo {a..z}{a..z}| fmt --width=2 | grep -v "oo"
