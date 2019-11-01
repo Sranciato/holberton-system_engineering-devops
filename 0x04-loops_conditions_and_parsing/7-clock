@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# display hours 0-12 minutes 1-59
+
+hour=0
+minute=1
+while [ $hour -le 12 ]
+do
+	minute=1
+	echo "Hour: $hour"
+	while [ $minute -le 59 ]
+	do
+		echo "$minute"
+		((minute++))
+	done
+	((hour++))
+done
