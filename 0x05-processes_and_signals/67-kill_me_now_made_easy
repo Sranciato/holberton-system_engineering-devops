@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# kill made easy
+
+pkill -f "7-highlander"
