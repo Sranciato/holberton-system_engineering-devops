@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# pings argument 5 times with edge case of no argument
 
 if [ $# -eq 0 ]
 then
