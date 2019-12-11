@@ -2,9 +2,7 @@
 # create an index.html file in web server via nginx
 apt-get -y update
 apt-get -y install nginx
-server {
-    listen 80;
-}
+mkdir -p /var/www/html
 echo "Holberton School" > "/var/www/html/index.html"
 service nginx reload
 service nginx restart
