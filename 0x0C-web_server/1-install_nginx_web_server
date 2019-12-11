@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 # create an index.html file in web server via nginx
-sudo apt-get -y update
-sudo apt-get -y install nginx
+apt-get -y update
+apt-get -y install nginx
+server {
+    listen 80;
+}
 echo "Holberton School" > "/var/www/html/index.html"
