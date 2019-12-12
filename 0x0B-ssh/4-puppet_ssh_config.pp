@@ -1,13 +1,11 @@
 # change config file lines
-
 file_line {
   ensure => 'present',
   path   => '/etc/ssh/ssh_config',
-  line   => '\tPasswordAuthentication no',
-  match  => 'PasswordAuthentication',
+  line   => 'PasswordAuthentication no',
 }
 file_line {
   ensure => 'present',
   path   => '/etc/ssh/ssh_config',
-  line   => '\tIdentityFile ~/.ssh/holberton',
+  line   => 'IdentityFile ~/.ssh/holberton',
 }
