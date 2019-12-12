@@ -2,3 +2,4 @@
 # append servername local host to apache config
 echo "ServerName localhost" >> /etc/apache2/apache2.conf
 service apache2 reload
+service apache2 restart
