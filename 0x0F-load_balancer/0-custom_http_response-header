@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#
+# configure web-02 to be identical to web-01 and add header
 sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo sed -i "12i add_header X-Served-By \$hostname;" /etc/nginx/nginx.conf
