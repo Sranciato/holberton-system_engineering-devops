@@ -12,8 +12,8 @@ frontend haproxynode
 
 backend backendnodes
     balance roundrobin
-    server 839-web-01 35.196.153.56 check
-    server 839-web-02 34.73.85.88 check
+    server 839-web-01 35.196.153.56:80 check
+    server 839-web-02 34.73.85.88:80 check
 
 EOF
 
