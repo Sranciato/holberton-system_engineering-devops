@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Fix nginx server
-ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enables/default
+sudo sed -i "s/sites-enabled/sites-available/" /etc/nginx/nginx.conf
 sudo service nginx restart
