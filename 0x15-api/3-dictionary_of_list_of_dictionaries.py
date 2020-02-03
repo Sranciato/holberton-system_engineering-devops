@@ -3,12 +3,12 @@ from json import dump
 import requests
 
 if __name__ == "__main__":
-    new_list = []
     result = {}
     users = requests.get("https://jsonplaceholder.typicode.com/users").json()
     tasks = requests.get("https://jsonplaceholder.typicode.com/todos").json()
 
     for user in users:
+        new_list = []
         for task in tasks:
             if user["id"] == task["userId"]:
                 task_dict = {}
