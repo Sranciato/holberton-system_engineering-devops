@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Return number of subscribers"""
 import requests
 import sys
 
@@ -9,6 +10,8 @@ def number_of_subscribers(subreddit):
         'https://api.reddit.com/r/{}/about'.format(subreddit),
         headers={'User-Agent': 'FancyRancy'}
     ).json()
+    """checks if subreddit exists"""
     if ('modhash' in about['data']):
         return(0)
+    """returns amount of subscribers"""
     return(about['data']['subscribers'])
