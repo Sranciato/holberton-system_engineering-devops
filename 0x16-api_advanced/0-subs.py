@@ -10,6 +10,7 @@ def number_of_subscribers(subreddit):
         'https://api.reddit.com/r/{}/about'.format(subreddit),
         headers={'User-Agent': 'FancyRancy'}
     ).json()
-    if ('modhash' in about['data']):
+    try:
+        return(about['data']['subscribers'])
+    except:
         return(0)
-    return(about['data']['subscribers'])
