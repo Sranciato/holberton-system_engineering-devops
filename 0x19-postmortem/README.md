@@ -15,3 +15,4 @@ The issue was a direct cause of assigning the wrong path to the status route. Th
 * Testing should be done before every change is implemented.
 * Read documentation regarding app.route().
 * Log all changes in order to make future bugs easier to discover.
+<img src="https://github.com/Sranciato/holberton-system_engineering-devops/tree/master/0x19-postmortem/image.jpg"/>
