@@ -1,7 +1,4 @@
 #Change the ulimit that causes too many open files
 exec { 'handle ulimit':
-  command => 'sudo /bin/sed -i \'s/15/1000/\' /etc/default/nginx'
-}
-exec { 'nginx restart':
-  command => 'sudo /usr/bin/service nginx restart'
+  command => sudo /bin/sed -i 's/15/1000/' /etc/default/nginx; sudo /usr/bin/service nginx restart
 }
